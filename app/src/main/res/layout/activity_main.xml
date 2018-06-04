@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/inclue_header" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_line"
+        android:layout_below="@+id/header"></FrameLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/divider"
+        android:layout_above="@+id/navigation" />
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <LinearLayout
+            android:id="@+id/tab_recharge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/tab_recharge_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_title_recharge"
+                android:textColor="@color/home_tab_color"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_manage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tab_manage_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_title_manage"
+                android:textColor="@color/home_tab_color"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_mesaage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/tab_msg_icon"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tab_msg_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab_msg_icon"
+                android:layout_centerHorizontal="true"
+                android:text="@string/home_title_message"
+                android:textColor="@color/home_tab_color"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/msg_count_bg"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="55"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/h4"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:src="@drawable/tab_profile_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_title_profile"
+                android:textColor="@color/home_tab_color"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

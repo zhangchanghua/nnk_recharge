@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nnk.rechargeplatform">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="OCR_APP_KEY"
+            android:value="10129903" />
+        <meta-data
+            android:name="OCR_SECRET_ID"
+            android:value="AKIDay70g7DH1WnpcBIaYRBftsc7MI1V4riL" />
+        <meta-data
+            android:name="OCR_SECRET_KEY"
+            android:value="Xw5zcz6xYsxmLdeQxEG2lGVUEivtb3FF" />
+
+        <activity
+            android:name=".login.view.InitActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.view.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".login.view.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".login.view.FindPassActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".login.view.RegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".recharge.view.RechargePhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".recharge.view.RechargeFlowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".recharge.view.RechargeVideoCateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".recharge.view.RechargeVideoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".recharge.view.RechargeOilActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".recharge.view.RechargeQQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".recharge.view.RechargeTelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.ProfileInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.ComfirmPhoneActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.ModifyPhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.AuthActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.linchaolong.android.imagepicker.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".profile.view.ModifyPassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.ModifyQQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.BalanceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.BalanceRechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.BalanceRechargeSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.PayManageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.BankCardsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".profile.view.ModifyPayPassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.AddCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".profile.view.UnbindCardActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name=".profile.view.AuthSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".main.view.WebActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="io.card.payment.CardIOActivity"-->
+        <!--android:screenOrientation="landscape"></activity>-->
+    </application>
+
+
+</manifest>
